@@ -64,7 +64,7 @@ def fetch_hot_posts(users, days=7, top_n=5):
     return posts
 
 st.title('Reddit User Hot Posts Fetcher')
-users_input = st.text_input('Enter usernames (comma-separated)', 'spez,kn0thing')
+users_input = st.text_input('Enter usernames (comma-separated)')
 days = st.slider('Number of days to look back', 1, 30, 7)
 top_n = st.slider('Number of top posts to check in each subreddit', 1, 20, 5)
 
